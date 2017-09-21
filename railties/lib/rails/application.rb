@@ -502,6 +502,7 @@ module Rails
     end
 
     def validate_secret_key_config! #:nodoc:
+      puts '# validate_secret_key_config! ####################################'
       if secrets.secret_key_base.blank?
         ActiveSupport::Deprecation.warn "You didn't set `secret_key_base`. " \
           "Read the upgrade documentation to learn more about this new config option."
